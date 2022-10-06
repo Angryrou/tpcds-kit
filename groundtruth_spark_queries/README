@@ -1,0 +1,3 @@
+the validation queries are from `www.github.com/databricks/spark-sql-perf/src/main/resources/tpcds_2_4
+
+Those queries are generated with the default subsitiution values and scale factor 1.
