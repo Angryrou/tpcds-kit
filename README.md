@@ -1,5 +1,15 @@
 # tpcds-kit
 
+This version is based on `https://github.com/databricks/tpcds-kit` and has modified to 
+  * add `query_templates_sparksql` for Spark SQL
+    ```bash
+    with the following changes in contents:
+    * add `spark.tpl`
+    * q34, q73: 'Unknown' changes to 'unknown' in BPTWO to align with the queries in Databricks.
+    ```
+  * support query generation for Spark SQL syntax with different randomness
+
+---
 The official TPC-DS tools can be found at [tpc.org](http://www.tpc.org/tpc_documents_current_versions/current_specifications.asp).
 
 This version is based on v2.4 and has been modified to:
