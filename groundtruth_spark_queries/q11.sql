@@ -67,7 +67,6 @@
          t_s_secyear.customer_id
          ,t_s_secyear.customer_first_name
          ,t_s_secyear.customer_last_name
-         ,
-t_s_secyear.customer_preferred_cust_flag
+         ,t_s_secyear.customer_preferred_cust_flag
  LIMIT 100
             
