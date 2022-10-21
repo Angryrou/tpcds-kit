@@ -82,8 +82,8 @@ define _LIMIT=100;
     select
         'catalog' as channel, [NULLCOLCS] col_name, d_year, d_qoy, i_category,
         cs_ext_sales_price ext_sales_price
-    from [NULLCOLCS], item, date_dim
-    where cs_ship_addr_sk IS NULL
+    from catalog_sales, item, date_dim
+    where [NULLCOLCS] IS NULL
       and cs_sold_date_sk=d_date_sk
       and cs_item_sk=i_item_sk) foo
  group by channel, col_name, d_year, d_qoy, i_category
